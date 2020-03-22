@@ -17,7 +17,7 @@ My custom font sits here
 ### 'style.css'
 The compiled sass output
 
-### 'images' folder and 'dist' folder
+### 'images' folderr
 Images folder is for my raw files, and dist is the compressed versions of the images
 
 ### 'gulpfile.js'
