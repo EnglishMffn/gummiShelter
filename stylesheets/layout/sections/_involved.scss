@@ -1,0 +1,56 @@
+// Get Involved Section
+
+#involved {
+  background: #fff;
+  z-index: 200;
+
+    // Custom Divider
+    &:after {
+      display: block;
+      content: '';
+      background: url('https://nonprofit.eborall.net/wp-content/themes/diviSpecial-child/images/divider-3.svg') no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      height: 57px;
+      margin-bottom: -1px;
+    }
+
+    img {
+      margin: -80px 0 -40px 0;
+      z-index: -500;
+      transition: all 0.4s ease-in-out;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .button.large {
+      margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: $breakpoint) {
+  #involved {
+    img {
+      margin-top: -80px;
+      margin-bottom: -50px;
+    }
+
+    .illustrations p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

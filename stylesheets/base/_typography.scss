@@ -1,0 +1,39 @@
+/**
+ * Basic typography styles
+*/
+
+// Font Styling
+html { 
+  font-size: 16px;
+}
+
+@media (max-width: 728px) {
+  html {
+    font-size: 3vw;
+  }
+}
+
+//Heading Sizes
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Greycliff CF';
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}

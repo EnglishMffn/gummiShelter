@@ -1,0 +1,45 @@
+/*!
+ Theme Name:     Eborall's Divi Child
+ Theme URI:      eborall.net
+ Description:    Eborall Child Theme
+ Author:         Joseph Eborall
+ Author URI:     eborall.net
+ Template:       DiviSpecial
+ Version:        1.0.0
+*/
+
+@charset 'UTF-8';
+
+// The only original Divi classes I need
+// (98% of the original left unused and was just bloat)
+@import
+'vendor/divi';
+
+// Variables
+@import
+'abstracts/variables';
+
+// Global Styling
+@import
+'base/base',
+'base/fonts',
+'base/typography';
+
+// Page Layout
+@import
+'layout/footer',
+'layout/navigation',
+
+'layout/sections/hero',
+'layout/sections/mission',
+'layout/sections/involved',
+'layout/sections/testimonials',
+'layout/sections/adopt';
+
+// Components
+@import
+'components/button',
+'components/card',
+'components/menu',
+'components/checkout';
+

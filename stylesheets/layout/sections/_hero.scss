@@ -1,0 +1,63 @@
+// Hero Page-Top Section
+
+#hero {
+  color: $white;
+  
+  background-image: linear-gradient(rgba(11,9,28,0.75), rgba(11,9,28,0.75)), url('https://nonprofit.eborall.net/wp-content/themes/diviSpecial-child/images/hero.jpg');
+  background-position: center;
+  background-size: cover;
+
+  h2 {
+    color: $white;
+    padding-bottom: 35px;
+  }
+
+  p {
+    font-style: italic;
+    padding-bottom: 15px;
+  }
+
+  // Hero text that cycles colors
+  .swap {
+    color: $primary-color;
+    animation: textCycle $cycle-duration ease-in-out alternate;
+    animation-iteration-count: infinite;
+  }
+    // Custom divider    
+    &:after {
+      display: block;
+      content: '';
+      background: url('https://nonprofit.eborall.net/wp-content/themes/diviSpecial-child/images/divider-1.svg') no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      height: 140px;
+      margin-bottom: -1px;
+    }
+
+    // Overriding divi styling
+    .et_pb_column_1_2 {
+      text-align: left;
+
+      &:first-child {
+        text-align: right;
+      }
+    }
+}
+
+@media (max-width: $breakpoint) {
+
+  #hero {
+    h2{
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+// Cycle through text colors
+@keyframes textCycle {
+  0%   {color: $primary-color;}
+  33%  {color: $secondary-color;}
+  100%  {color: $alternate-color;}
+}

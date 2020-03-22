@@ -1,0 +1,10 @@
+// Adoption section
+
+#adopt {
+  padding-top: 150px;
+  background: $light-gray;
+
+  &:after {
+    clear: both;
+  }
+}

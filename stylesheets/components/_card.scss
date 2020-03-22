@@ -1,0 +1,62 @@
+// Card Component
+
+.card {
+  background: #fff;
+  box-shadow: 0 0 25px rgba(0,0,0,.16);
+  border-radius: $global-radius;
+  padding: 25px 15px;
+
+  .avatar img {
+    border-radius: 100%;
+    border: 2px solid rgba(112, 112, 112, .05);
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 5px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+    padding-bottom: 0; 
+  }
+
+  .desc {
+    color: lighten(#000, 60);
+  }
+
+  .button {
+    display: block;
+    max-width: 114px;
+    margin: 25px auto 0 auto;
+  }
+}
+
+@media (max-width: $breakpoint) {
+  .card {
+    .avatar {
+      float: left;
+      width: 30%;
+
+      img {
+        max-height: 72px;
+        max-width: 72px;
+      }
+    }
+
+    .desc {
+      float: left;
+      width: 70%;
+
+      .button {
+        max-width: 130px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      p,
+      h5 {
+        text-align: left;
+      }
+    }
+  }
+}

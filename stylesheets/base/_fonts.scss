@@ -1,0 +1,15 @@
+//Import Greycliff Geometric Sans Font
+
+@font-face {
+  font-family: 'Greycliff CF';
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/GreycliffCF-Bold.woff2') format('woff2'), url('GreycliffCF-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Greycliff CF';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/GreycliffCF-Regular.woff2') format('woff2'), url('GreycliffCF-Regular.woff') format('woff');
+}

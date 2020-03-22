@@ -1,0 +1,39 @@
+// Our Mission Section
+
+#mission {
+  background: $light-gray;
+    span {
+      font-size: 1.25rem;
+    }
+
+    &:after {
+      display: block;
+      content: '';
+      background: url('https://nonprofit.eborall.net/wp-content/themes/diviSpecial-child/images/divider-2.svg') no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      height: 340px;
+      margin-bottom: -1px;
+      margin-top: -340px;
+    }
+
+    video {
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(0,0,0,.20);
+      margin: 0 auto;
+      width: 100%;
+      max-width: 588px;
+      max-height: 400px;
+      background: #000;
+    }
+}
+
+@media (max-width: $breakpoint) {
+  #mission {
+    &:after {
+      height: 150px;
+      margin-top: -150px;
+    }
+  }
+}

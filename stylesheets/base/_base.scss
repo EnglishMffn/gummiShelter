@@ -1,0 +1,43 @@
+* {
+  font-family: 'Greycliff CF';
+  text-align: center;
+}
+
+.container,
+.et_pb_row {
+  width: 80%;
+}
+
+.et_pb_row {
+  padding: 0 0 30px 0;
+}
+
+a {
+  color: $primary-color;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+section:not(:first-child) {
+  padding-top: 25px;
+}
+
+@media (max-width: $breakpoint) {
+  section:not(:first-child) {
+    padding-top: 15px;
+  }
+
+  .container,
+  .et_pb_row {
+    width: 92%;
+  }
+  
+}
+
+.no-top {
+  margin-top: 0;
+  padding-top: 0 !important;
+}

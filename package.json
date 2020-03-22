@@ -1,0 +1,21 @@
+{
+  "name": "divispecial-child",
+  "version": "1.0.0",
+  "description": "Hi Brother Lybbert! I've been trying to save some time by using a more modern stack workflow using SASS, airbnb linting, a custom page theme, and gulp for compiling/testing. I did this because I found the divi pagebuilder quite cumbersome.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.0.2",
+    "imagemin-guetzli": "^2.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
