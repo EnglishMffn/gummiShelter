@@ -10,11 +10,6 @@
 
 @charset 'UTF-8';
 
-// The only original Divi classes I need
-// (98% of the original left unused and was just bloat)
-@import
-'vendor/divi';
-
 // Variables
 @import
 'abstracts/variables';
@@ -43,3 +38,6 @@
 'components/menu',
 'components/checkout';
 
+// Dark Mode for Fun
+@import
+'theme/dark';

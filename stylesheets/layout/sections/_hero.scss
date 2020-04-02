@@ -1,5 +1,4 @@
 // Hero Page-Top Section
-
 #hero {
   color: $white;
   
@@ -15,6 +14,11 @@
   p {
     font-style: italic;
     padding-bottom: 15px;
+  }
+
+  ul,
+  li {
+    list-style: none;
   }
 
   // Hero text that cycles colors
@@ -33,20 +37,16 @@
       height: 140px;
       margin-bottom: -1px;
     }
-
-    // Overriding divi styling
-    .et_pb_column_1_2 {
-      text-align: left;
-
-      &:first-child {
-        text-align: right;
-      }
-    }
 }
 
 @media (max-width: $breakpoint) {
 
   #hero {
+
+    &:after{
+      height: 60px;
+    }
+
     h2{
       br {
         display: none;

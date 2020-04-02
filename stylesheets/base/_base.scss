@@ -12,6 +12,16 @@
   padding: 0 0 30px 0;
 }
 
+@media (max-height: 980px) {
+  .et_pb_row {
+    padding: 0 0 30px 0;
+  }
+}
+
+.et_pb_section {
+  padding: 0 !important;
+}
+
 a {
   color: $primary-color;
   font-weight: bold;
@@ -37,7 +47,33 @@ section:not(:first-child) {
   
 }
 
+// Layout Helpers
 .no-top {
   margin-top: 0;
   padding-top: 0 !important;
+}
+
+.no-pad {
+  padding: 0 !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-left,
+.text-left > .et_pb_text_inner {
+  text-align: left !important;
+}
+
+.text-right,
+.text-right > .et_pb_text_inner {
+  text-align: right !important;
+}
+
+// Mobile Fixes
+@media (max-height: $breakpoint) {
+  .et_pb_row {
+    padding: 0 0 20px 0;
+  }
 }

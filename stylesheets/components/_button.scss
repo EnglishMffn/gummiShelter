@@ -18,12 +18,17 @@
     display: block;
     max-width: 300px;
     margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 20px;
   }
 
   &:hover {
     box-shadow: 0 0 8px $primary-color;
-    transform: translateY(-2px);
+    transform: translateY(-2px) !important;
     text-decoration: none;
+    color: #fff;
+    animation: colorCycle .75s alternate;
+    animation-iteration-count: infinite;
   }
 
   img {
@@ -38,6 +43,7 @@
   &.white {
     background: rgba(0, 0, 0, 0);
     border: 2px solid $white;
+    padding: 9px 15px;
     box-shadow: none;
     animation: none;
 
@@ -50,11 +56,15 @@
 }
 
 @media (max-width: $breakpoint) {
-  .button {
+  .button,
+  .button.white {
     display: block;
+    font-size: 1.5rem;
+    padding: 13px;
   }
 }
 
+// Color Cycling Animation
 @keyframes colorCycle {
   0%   {background-color: $primary-color; box-shadow: 0 0 15px $primary-color;}
   33%  {background-color: $secondary-color; box-shadow: 0 0 15px $secondary-color;}

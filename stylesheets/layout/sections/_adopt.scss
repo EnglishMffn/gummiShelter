@@ -1,10 +1,15 @@
 // Adoption section
-
 #adopt {
-  padding-top: 150px;
+  padding-top: 125px !important;
   background: $light-gray;
 
   &:after {
     clear: both;
+  }
+}
+
+@media (max-width: $breakpoint) {
+  #adopt {
+    padding-top: 20px !important;
   }
 }
