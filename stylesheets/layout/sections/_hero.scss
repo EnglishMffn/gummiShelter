@@ -1,10 +1,9 @@
 // Hero Page-Top Section
 #hero {
-  color: $white;
-  
-  background-image: linear-gradient(rgba(11,9,28,0.75), rgba(11,9,28,0.75)), url('https://nonprofit.eborall.net/wp-content/themes/diviSpecial-child/images/hero.jpg');
+  background-image: linear-gradient(rgba(11, 9, 28, .75), rgba(11, 9, 28, .75)), url('./images/hero.jpg');
   background-position: center;
   background-size: cover;
+  color: $white;
 
   h2 {
     color: $white;
@@ -23,27 +22,28 @@
 
   // Hero text that cycles colors
   .swap {
-    color: $primary-color;
     animation: textCycle $cycle-duration ease-in-out alternate;
     animation-iteration-count: infinite;
+    color: $primary-color;
   }
-    // Custom divider    
-    &:after {
-      display: block;
-      content: '';
-      background: url('https://nonprofit.eborall.net/wp-content/themes/diviSpecial-child/images/divider-1.svg') no-repeat;
-      background-size: cover;
-      background-position-x: center;
-      height: 140px;
-      margin-bottom: -1px;
-    }
+
+  // Custom divider
+  &::after {
+    background: url('./images/divider-1.svg') no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    content: '';
+    display: block;
+    height: 140px;
+    margin-bottom: -1px;
+  }
 }
 
 @media (max-width: $breakpoint) {
 
   #hero {
 
-    &:after{
+    &::after {
       height: 60px;
     }
 

@@ -1,9 +1,9 @@
 // Adoption section
 #adopt {
-  padding-top: 125px !important;
   background: $light-gray;
+  padding-top: 125px !important;
 
-  &:after {
+  &::after {
     clear: both;
   }
 }

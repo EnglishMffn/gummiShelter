@@ -1,7 +1,6 @@
 # Eborall Custom Theme
 Hi Brother Lybbert!
 I've been trying to save some time by using a more modern stack workflow using Sass, airbnb linting, a custom page theme, and gulp for compiling/testing.
-I did this because I found the divi pagebuilder quite cumbersome.
 
 ## Theme Structure
 

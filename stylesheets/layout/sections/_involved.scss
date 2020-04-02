@@ -1,54 +1,99 @@
 // Get Involved Section
 
 #involved {
-  background: #fff;
-  z-index: 5;
+  background: $white;
   padding-bottom: 66px !important;
+  z-index: 5;
 
-    // Custom Divider
-    &:after {
-      display: block;
-      content: '';
-      background: url('https://nonprofit.eborall.net/wp-content/themes/diviSpecial-child/images/divider-3.svg') no-repeat;
-      background-size: cover;
-      background-position-x: center;
-      height: 100px;
-      margin-bottom: -75px;
-      background-color: $light-gray;
-    }
+  // Custom Divider
+  &::after {
+    background: url('./images/divider-3.svg') no-repeat;
+    background-color: $light-gray;
+    background-position-x: center;
+    background-size: cover;
+    content: '';
+    display: block;
+    height: 100px;
+    margin-bottom: -75px;
+  }
+  
+  .primary-shadow,
+  .secondary-shadow,
+  .alternate-shadow {
+    padding: 25px;
+  }
 
-    img {
-      margin: -100px 0 -80px 0;
-      z-index: -500;
-      transition: all 0.4s ease-in-out;
-      animation: float 6s ease-in-out infinite;
-    }
+  .primary-shadow {
+    filter: drop-shadow(0 0 30px rgba($primary-color, .5));
+  }
 
-    .button.large {
-      margin-bottom: 50px;
+  .secondary-shadow {
+    filter: drop-shadow(0 0 30px rgba($secondary-color, .5));
+  }
+
+  .alternate-shadow {
+    filter: drop-shadow(0 0 30px rgba($alternate-color, .5));
+  }
+
+  #education {
+    background: linear-gradient(#00cea9, #00d092);
+    clip-path: url('#educate-clip');
+    -webkit-clip-path: url('#educate-clip');
+    overflow: hidden;
+  }
+  
+  #rescue {
+    background: linear-gradient(#e5364b, #ef5365);
+    clip-path: url('#rescue-clip');
+    -webkit-clip-path: url('#rescue-clip');
+    overflow: hidden;
+  }
+
+  #adopted {
+    background: linear-gradient(#00e6ff,#00b7ff);
+    clip-path: url('#adopt-clip');
+    -webkit-clip-path: url('#adopt-clip');
+    overflow: hidden;
+  }
+
+  .animated {
+    z-index: -5;
+    max-width: 150px;
+    max-height: 150px;
+    margin: auto;
+
+    & > svg {
+      opacity: .5;
+      padding: 15px;
     }
+  }
+
+  .button.large {
+    margin-bottom: 50px;
+  }
 
 }
 
 @media (max-width: $breakpoint) {
   #involved {
-
-    &:after {
+    &::after {
       height: 0;
     }
 
     .button.large {
+      margin: 25px 0 50px;
       max-width: 100%;
-      margin: 25px 0 50px 0;
     }
 
     img {
-      margin-top: -60px;
       margin-bottom: -65px;
+      margin-top: -60px;
     }
 
-    .illustrations p {
-      margin-bottom: 20px;
+    .illustrations {
+      p {
+        margin-bottom: 20px;
+      }
     }
   }
 }

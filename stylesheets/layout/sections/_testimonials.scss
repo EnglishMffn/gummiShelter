@@ -4,7 +4,7 @@
   margin: -125px auto;
 
   .module {
-    background: #0B091C;
+    background: $black-tint;
     border-radius: 30px;
     box-shadow: 0 0 50px rgba(0, 0, 0, .16);
     padding: 50px;
@@ -16,32 +16,34 @@
     }
 
     .quote {
-      color: #fff;
-      text-align: left;
+      color: $white;
       font-weight: bold;
+      text-align: left;
 
-      p{
-        text-align: left;
+      p {
         font-size: 1.5rem;
         padding-top: 10px;
+        text-align: left;
+        text-transform: uppercase;
       }
 
       span {
-        color: #fff;
+        color: $white;
         font-size: 2.375rem;
-        line-height: 1.2;
         font-style: italic;
+        line-height: 1.2;
+        margin-bottom: 25px;
         position: relative;
 
-        &:before {
+        &::before {
+          background: url('./images/quote-left.svg') no-repeat;
           content: '';
           display: block;
-          width: 59px;
           height: 51px;
-          background: url('https://nonprofit.eborall.net/wp-content/themes/diviSpecial-child/images/quote-left.svg') no-repeat;
+          left: -20px;
           position: absolute;
           top: -20px;
-          left: -20px;
+          width: 59px;
         }
       }
     }
@@ -55,14 +57,18 @@
 
     .module {
       .quote {
-          display: inline;
+        display: inline;
 
-          span,
-          p {
-            text-align: center;
-            font-size: 18px;
-          }
+        span {
+          margin-bottom: 0;
         }
+
+        span,
+        p {
+          text-align: center;
+          font-size: 18px;
+        }
+      }
     }
   }
 }

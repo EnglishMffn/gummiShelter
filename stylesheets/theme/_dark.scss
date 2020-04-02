@@ -9,10 +9,8 @@ $dark-secondary-text: #bbbec3;
 
 
 @media (prefers-color-scheme: dark) {
-  
   body,
-  html,
-  {
+  html {
     background: $dark-background;
   }
 
@@ -36,7 +34,7 @@ $dark-secondary-text: #bbbec3;
   .card {
     background: $dark-mid;
   }
-  
+
   // Section Colors
   #mission,
   #adopt {
@@ -44,7 +42,7 @@ $dark-secondary-text: #bbbec3;
   }
 
   #footer-bottom,
-  #testimonials .module {  
+  #testimonials .module {
     background: $dark-highlight;
   }
 
@@ -54,25 +52,25 @@ $dark-secondary-text: #bbbec3;
 
   // Section Images
   #hero::after {
-    background-image: url('https://nonprofit.eborall.net/wp-content/themes/diviSpecial-child/images/divider-1-dark.svg');
+    background-image: url('./images/divider-1-dark.svg');
   }
 
   #mission::after {
-    background-image: url('https://nonprofit.eborall.net/wp-content/themes/diviSpecial-child/images/divider-2-dark.svg');
+    background-image: url('./images/divider-2-dark.svg');
   }
 
   #involved::after {
-    background-image: url('https://nonprofit.eborall.net/wp-content/themes/diviSpecial-child/images/divider-3-dark.svg');
     background-color: $dark-background;
+    background-image: url('./images/divider-3-dark.svg');
   }
 
   img {
     opacity: .75;
     transition: opacity .5s ease-in-out;
-  }
 
-  img:hover {
-    opacity: 1;
+    &:hover {
+      opacity: 1;
+    }
   }
 
   #mobile_menu1 {
@@ -82,5 +80,4 @@ $dark-secondary-text: #bbbec3;
       color: $dark-primary-text !important;
     }
   }
-  
 }
