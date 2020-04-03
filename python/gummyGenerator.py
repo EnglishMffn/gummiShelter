@@ -421,8 +421,12 @@ def getBio(max_bio):
   ]
 
   while bio_count < max_bio:
-    bio += str(adverbs[random.randint(0, 199)]).capitalize() + \
-        " " + adjectives[random.randint(0, 199)]
+    if bio_count == 0:
+      bio += str(adverbs[random.randint(0, 199)]).capitalize() + \
+          " " + adjectives[random.randint(0, 199)]
+    else:
+      bio += str(adverbs[random.randint(0, 199)]) + \
+          " " + adjectives[random.randint(0, 199)]
 
     if bio_count < max_bio - 1:
        bio += ", "
