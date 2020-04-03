@@ -3,7 +3,7 @@
 .card {
   background: #fff;
   border-radius: $global-radius;
-  box-shadow: 0 0 25px rgba(0, 0, 0, .16);
+  box-shadow: 0 0 25px rgba($black, .16);
   padding: 25px 15px;
 
   .avatar img {

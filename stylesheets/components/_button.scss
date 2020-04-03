@@ -41,7 +41,7 @@
 
   &.white {
     animation: none;
-    background: rgba(0, 0, 0, 0);
+    background: rgba($black, 0);
     border: 2px solid $white;
     box-shadow: none;
     padding: 9px 15px;

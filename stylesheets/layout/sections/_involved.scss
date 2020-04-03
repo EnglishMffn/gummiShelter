@@ -20,39 +20,39 @@
   .primary-shadow,
   .secondary-shadow,
   .alternate-shadow {
-    padding: 25px;
+    padding-bottom: 25px;
   }
 
   .primary-shadow {
     filter: drop-shadow(0 0 30px rgba($primary-color, .5));
   }
 
-  .secondary-shadow {
+  .alternate-shadow {
     filter: drop-shadow(0 0 30px rgba($secondary-color, .5));
   }
 
-  .alternate-shadow {
+  .secondary-shadow {
     filter: drop-shadow(0 0 30px rgba($alternate-color, .5));
   }
 
   #education {
+    -webkit-clip-path: url('#educate-clip');
     background: linear-gradient(#00cea9, #00d092);
     clip-path: url('#educate-clip');
-    -webkit-clip-path: url('#educate-clip');
     overflow: hidden;
   }
-  
+
   #rescue {
-    background: linear-gradient(#e5364b, #ef5365);
-    clip-path: url('#rescue-clip');
     -webkit-clip-path: url('#rescue-clip');
+    background: linear-gradient(#00e6ff,#00b7ff);
+    clip-path: url('#rescue-clip');
     overflow: hidden;
   }
 
   #adopted {
-    background: linear-gradient(#00e6ff,#00b7ff);
-    clip-path: url('#adopt-clip');
     -webkit-clip-path: url('#adopt-clip');
+    background: linear-gradient(#e5364b, #ef5365);
+    clip-path: url('#adopt-clip');
     overflow: hidden;
   }
 
