@@ -17,6 +17,30 @@
     margin-bottom: -75px;
   }
   
+
+  // Lottie Illustration Backgrounds
+  #education {
+    -webkit-clip-path: url('#educate-clip');
+    background: linear-gradient(#00cea9, #00d092);
+    clip-path: url('#educate-clip');
+    overflow: hidden;
+  }
+
+  #rescue {
+    -webkit-clip-path: url('#rescue-clip');
+    background: linear-gradient(#e5364b, #ef5365);
+    clip-path: url('#rescue-clip');
+    overflow: hidden;
+  }
+
+  #adopted {
+    -webkit-clip-path: url('#adopt-clip');
+    background: linear-gradient(#00e6ff,#00b7ff);
+    clip-path: url('#adopt-clip');
+    overflow: hidden;
+  }
+
+  // Illustration Styling
   .primary-shadow,
   .secondary-shadow,
   .alternate-shadow {
@@ -27,40 +51,19 @@
     filter: drop-shadow(0 0 30px rgba($primary-color, .5));
   }
 
-  .alternate-shadow {
+  .secondary-shadow {
     filter: drop-shadow(0 0 30px rgba($secondary-color, .5));
   }
 
-  .secondary-shadow {
+  .alternate-shadow {
     filter: drop-shadow(0 0 30px rgba($alternate-color, .5));
   }
 
-  #education {
-    -webkit-clip-path: url('#educate-clip');
-    background: linear-gradient(#00cea9, #00d092);
-    clip-path: url('#educate-clip');
-    overflow: hidden;
-  }
-
-  #rescue {
-    -webkit-clip-path: url('#rescue-clip');
-    background: linear-gradient(#00e6ff,#00b7ff);
-    clip-path: url('#rescue-clip');
-    overflow: hidden;
-  }
-
-  #adopted {
-    -webkit-clip-path: url('#adopt-clip');
-    background: linear-gradient(#e5364b, #ef5365);
-    clip-path: url('#adopt-clip');
-    overflow: hidden;
-  }
-
   .animated {
-    z-index: -5;
-    max-width: 150px;
-    max-height: 150px;
     margin: auto;
+    max-height: 150px;
+    max-width: 150px;
+    z-index: -5;
 
     & > svg {
       opacity: .5;
