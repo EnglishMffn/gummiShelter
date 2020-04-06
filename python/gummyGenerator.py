@@ -7,7 +7,7 @@ import names
 # 19 Mar, 2020
 
 # How Many Gummies?
-GUMMY_COUNT = input("How Many Gummies?")
+GUMMY_COUNT = int(input("How Many Gummies?\n"))
 
 # Loop Bio Generator a Few Times
 def get_bio(max_bio):
@@ -476,4 +476,4 @@ with F:
     WRITER.writeheader()
     WRITER.writerows(GUMMY_DATA)
 
-print("\nFile Generated Successfully")
+print("\n" + str(GUMMY_COUNT) +" Gummies Generated Successfully")
