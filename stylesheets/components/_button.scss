@@ -6,7 +6,7 @@
   background: $primary-color;
   border-radius: 15px;
   box-shadow: 0 0 15px $primary-color;
-  color: #fff;
+  color: $white;
   font-size: 1.125rem;
   font-weight: bold;
   padding: 10px 15px;
@@ -26,7 +26,7 @@
     animation: colorCycle .75s alternate;
     animation-iteration-count: infinite;
     box-shadow: 0 0 8px $primary-color;
-    color: #fff;
+    color: $white;
     text-decoration: none;
     transform: translateY(-2px) !important;
   }
@@ -48,7 +48,7 @@
 
 
     &:hover {
-      background: #fff;
+      background: $white;
       color: $black;
       transform: translateY(-2px);
     }

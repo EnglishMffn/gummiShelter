@@ -7,10 +7,10 @@ import names
 # 19 Mar, 2020
 
 # How Many Gummies?
-GUMMY_COUNT = 101
+GUMMY_COUNT = input("How Many Gummies?")
 
 # Loop Bio Generator a Few Times
-def getBio(max_bio):
+def get_bio(max_bio):
   bio_count = 0
 
   bio = ""
@@ -451,7 +451,7 @@ while COUNT < GUMMY_COUNT:
   name = names.get_first_name()
 
   gummy_type = GUMMY_TYPES[random_type]
-  bio = getBio(3)
+  bio = get_bio(3)
 
   # Random Profile Pic
   profile_pic = "/" + str(gummy_type).lower() + "/" + \
@@ -469,7 +469,7 @@ while COUNT < GUMMY_COUNT:
 
 # Write Array to CSV
 FIELD_NAMES = [key for key in GUMMY_DATA[0]]
-F = open(os.path.join(os.path.dirname(__file__), "gummiGenerator.csv"), "w")
+F = open(os.path.join(os.path.dirname(__file__), "Generated Gummies.csv"), "w")
 
 with F:
     WRITER = csv.DictWriter(F, fieldnames=FIELD_NAMES)
