@@ -1,7 +1,7 @@
 {
   "name": "divispecial-child",
   "version": "1.0.0",
-  "description": "Hi Brother Lybbert! I've been trying to save some time by using a more modern stack workflow using SASS, airbnb linting, a custom page theme, and gulp for compiling/testing. I did this because I found the divi pagebuilder quite cumbersome.",
+  "description": "I've been trying to save some time by using a more modern stack workflow using SASS, airbnb linting, a custom page theme, and gulp for compiling/testing.",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^4.0.2",
